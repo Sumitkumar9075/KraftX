@@ -1,0 +1,110 @@
+/* Apply Roboto font globally */
+body {
+  font-family: 'Roboto', sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: #f5f5f5; /* Light gray background */
+}
+
+/* Login container */
+.login-container {
+  background-color: white; /* Clean white background */
+  width: 350px; /* Match width with the content container */
+  padding: 30px; /* Same padding for both containers */
+  border: 1px solid #e0e0e0; /* Light subtle border */
+  border-radius: 12px; /* Rounded corners for both containers */
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1); /* Soft, deep shadow for depth */
+  margin: 60px auto; /* Centered with top margin */
+  display: flex;
+  flex-direction: column;
+  text-align: center; /* Center-align all content */
+  font-family: 'Roboto', sans-serif; /* Font consistency */
+}
+
+/* Headings */
+.login-container h2 {
+  color: black; /* Dark text for visibility */
+  margin-bottom: 20px; /* Adequate space between title and form */
+  font-size: 28px; /* Slightly larger title font */
+  font-weight: 600; /* Bold weight for emphasis */
+  text-transform: uppercase; /* Uppercase for a sleek, bold look */
+}
+
+/* Form field styling */
+.login-container label {
+  color: #333; /* Slightly darker text for labels */
+  font-weight: 500; /* Medium weight for labels */
+  display: block;
+  margin-bottom: 8px; /* Adequate space for better readability */
+  font-size: 14px; /* Clean, modern label font size */
+}
+
+/* Input fields styling */
+.login-container input[type="email"],
+.login-container input[type="password"] {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 20px; /* More space between fields */
+  border: 1px solid #ddd; /* Light border */
+  border-radius: 8px; /* Rounded corners for inputs */
+  outline: none;
+  font-size: 16px;
+  color: #333;
+  background-color: #fafafa; /* Slight off-white background for inputs */
+}
+
+/* Input fields focus styling */
+.login-container input[type="email"]:focus,
+.login-container input[type="password"]:focus {
+  border-color: #333; /* Dark border on focus */
+  background-color: #fff; /* White background on focus */
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.1); /* Subtle focus shadow */
+}
+
+/* Button styling */
+.login-container button {
+  background-color: #333; /* Dark button background */
+  color: white; /* White button text */
+  padding: 15px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  width: 100%;
+  font-size: 18px;
+  font-weight: bold;
+  letter-spacing: 1px; /* Slight letter spacing for modern look */
+  transition: background-color 0.3s ease, transform 0.2s ease-in-out;
+  margin-top: 10px; /* Space above the button */
+}
+
+/* Button hover effect */
+.login-container button:hover {
+  background-color: #555; /* Lighter gray on hover */
+  transform: translateY(-2px); /* Slight upward movement on hover */
+}
+
+/* Disabled button styling */
+.login-container button:disabled {
+  background-color: #ccc; /* Disabled button color */
+  cursor: not-allowed; /* Change cursor */
+  transform: none; /* No hover effect on disabled button */
+}
+
+/* Checkbox and label styling */
+.login-container input[type="checkbox"] {
+  width: auto;
+  margin-right: 8px;
+}
+
+.login-container label[for="remember"] {
+  display: inline-block;
+  color: #333;
+  font-size: 14px;
+  margin-top: 8px; /* Add space above checkbox */
+}
+
+/* Additional spacing between form fields */
+.login-container > *:not(button) {
+  margin-bottom: 15px; /* Consistent margin between fields */
+}

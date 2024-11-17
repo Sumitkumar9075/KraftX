@@ -1,0 +1,20 @@
+<div *ngIf="!isLoggedIn" class="login-container">
+  <h2>KrafterX</h2>
+  <form (ngSubmit)="onSubmit()">
+    <div>
+      <label for="email">Email:</label>
+      <input type="email" id="email" [(ngModel)]="email" name="email" required />
+    </div>
+    <div>
+      <label for="password">Password:</label>
+      <input type="password" id="password" [(ngModel)]="password" name="password" required />
+    </div>
+    <div>
+      <input type="checkbox" id="remember" [(ngModel)]="rememberMe" name="remember" />
+      <label for="remember">Remember Me</label>
+    </div>
+    <button type="submit">Sign In</button>
+  </form>
+</div>
+
+<app-link *ngIf="isLoggedIn"></app-link>

@@ -1,0 +1,75 @@
+/* Apply Roboto font globally */
+body {
+  font-family: 'Roboto', sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: #f5f5f5; /* Light gray background */
+}
+
+/* Content container */
+.con {
+  background-color: white; /* White background */
+  width: 350px; /* Match width with the login container */
+  padding: 30px; /* Same padding for both containers */
+  border: 1px solid #e0e0e0; /* Light subtle border */
+  border-radius: 12px; /* Rounded corners for both containers */
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1); /* Soft, deep shadow for depth */
+  margin: 60px auto; /* Centered with top margin */
+  display: flex;
+  flex-direction: column;
+  text-align: center; /* Center-align all content */
+  font-family: 'Roboto', sans-serif; /* Font consistency */
+}
+
+/* Title */
+.con h1 {
+  font-size: 28px; /* Match font size with the login form */
+  color: black; /* Dark text */
+  margin-bottom: 20px; /* Adequate space below the title */
+}
+
+/* Paragraph styling for company name */
+.con p {
+  font-size: 16px; /* Regular text size */
+  color: #333; /* Dark gray text color */
+  margin-bottom: 10px; /* Space between paragraphs */
+}
+
+/* Profile image styling */
+.profile-img {
+  width: 60px; /* Small profile image */
+  height: 60px; /* Equal height to width for a square image */
+  border-radius: 50%; /* Circular image */
+  margin-bottom: 20px; /* Space between the image and button */
+  object-fit: cover; /* Ensure the image covers the area without distortion */
+}
+
+/* Button styling */
+.con button {
+  background-color: #333; /* Dark button background */
+  color: white; /* White button text */
+  padding: 15px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  width: 100%;
+  font-size: 18px;
+  font-weight: bold;
+  letter-spacing: 1px; /* Slight letter spacing for modern look */
+  transition: background-color 0.3s ease, transform 0.2s ease-in-out;
+  margin-top: 10px; /* Space above the button */
+}
+
+/* Button hover effect */
+.con button:hover {
+  background-color: #555; /* Lighter gray on hover */
+  transform: translateY(-2px); /* Slight upward movement on hover */
+}
+
+/* Disabled button styling */
+.con button:disabled {
+  background-color: #ccc; /* Disabled button color */
+  cursor: not-allowed; /* Change cursor */
+  transform: none; /* No hover effect on disabled button */
+}

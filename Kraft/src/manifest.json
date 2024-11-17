@@ -1,0 +1,33 @@
+{
+    "name": "KraftX",
+    "version": "1.0",
+    "description": "Build an Extension with Angular",
+    "manifest_version": 3,
+    "action": {
+        "default_popup": "index.html"
+    },
+    "background": {
+    "service_worker": "background.js"
+  },
+  "permissions": ["storage", "identity", "runtime",
+  "cookies",  "activeTab", "<all_urls>", "tabs",
+
+    "http://kraftercrud.azurewebsites.net/*",
+    "https://kraftercrud.azurewebsites.net/*"
+],
+  "host_permissions": [
+    "http://kraftercrud.azurewebsites.net/*",
+    "https://kraftercrud.azurewebsites.net/*",
+     "http://*/*",
+    "https://*/*"
+  ],
+  "content_scripts": [
+    {
+      "matches": ["https://www.linkedin.com/*"],
+      "js": ["content.js"]
+    }
+  ]
+
+
+
+  }

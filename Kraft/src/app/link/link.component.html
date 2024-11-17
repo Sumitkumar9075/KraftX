@@ -1,0 +1,7 @@
+<div class="con">
+  <h1>KrafterX</h1>
+  <p *ngIf="name"> Company: {{ name }}</p>
+  <p *ngIf="name === ''">Name not found</p>
+  <img *ngIf="imageUrl" [src]="imageUrl" alt="Profile Image" class="profile-img" />
+  <button (click)="sendData()" [disabled]="!name">Add Account</button>
+</div>
